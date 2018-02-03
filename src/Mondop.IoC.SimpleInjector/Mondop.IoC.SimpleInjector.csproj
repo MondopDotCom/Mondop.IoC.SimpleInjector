@@ -2,11 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Version>1.0.0-Alpha006</Version>
+    <Version>1.0.2</Version>
+    <Authors>M. Vroone</Authors>
+    <Company>It-actief</Company>
+    <Product>Mondop IoC SimpleInjector</Product>
+    <Description>Package containing SimpleInjector implemenation for Mondop.Abstrations</Description>
+    <Copyright>Copyright 2018 by It-actief</Copyright>
+    <PackageProjectUrl>http://www.mondop.com</PackageProjectUrl>
+    <PackageReleaseNotes>1.0.2 Implementation of Abstractions 1.0.2</PackageReleaseNotes>
+    <PackageLicenseUrl>https://github.com/MondopDotCom/Mondop.IoC.SimpleInjector/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/MondopDotCom/Mondop.IoC.SimpleInjector</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mondop.Abstractions" Version="1.0.2-ALPHA003" />
+    <PackageReference Include="Mondop.Abstractions" Version="1.0.2" />
     <PackageReference Include="Mondop.Core" Version="1.0.1" />
     <PackageReference Include="SimpleInjector" Version="4.0.12" />
   </ItemGroup>
