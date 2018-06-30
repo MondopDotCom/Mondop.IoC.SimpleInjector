@@ -15,7 +15,7 @@ namespace Mondop.IoC.SimpleInjector
         public Bootstrapper()
         {
             _container = new Container();
-            _iocContainer = new SimpleInjectionIoCContainer(_container);
+            _iocContainer = new SimpleInjectionIoCContainer();
         }
 
         private void RegisterDependencies(IIoCModule module)
@@ -62,11 +62,13 @@ namespace Mondop.IoC.SimpleInjector
             BeforeBootup();
             RegisterModules();
             AfterBootup();
+
+            _iocContainer.Build();
         }
 
         public TService GetInstance<TService>() where TService: class
         {
-            return (TService)_container.GetInstance<TService>();
+            return _iocContainer.GetInstance<TService>();
         }
     }
 }
