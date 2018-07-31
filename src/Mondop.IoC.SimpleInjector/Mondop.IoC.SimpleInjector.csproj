@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>M. Vroone</Authors>
     <Company>It-actief</Company>
     <Product>Mondop IoC SimpleInjector</Product>
@@ -10,7 +10,9 @@
     <Copyright>Copyright 2018 by It-actief</Copyright>
     <PackageProjectUrl>http://www.mondop.com</PackageProjectUrl>
     <PackageReleaseNotes>1.0.2 Implementation of Abstractions 1.0.2
-1.0.3 Updated packages</PackageReleaseNotes>
+1.0.3 Updated packages
+1.0.4 Added GetAllInstances
+</PackageReleaseNotes>
     <PackageLicenseUrl>https://github.com/MondopDotCom/Mondop.IoC.SimpleInjector/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/MondopDotCom/Mondop.IoC.SimpleInjector</RepositoryUrl>
   </PropertyGroup>

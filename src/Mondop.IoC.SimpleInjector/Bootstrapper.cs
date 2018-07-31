@@ -26,7 +26,7 @@ namespace Mondop.IoC.SimpleInjector
 
         private void RegisterModule(Type moduleType)
         {
-            if(!_modules.ContainsKey(moduleType))
+            if (!_modules.ContainsKey(moduleType))
             {
                 var instance = Activator.CreateInstance(moduleType) as IIoCModule;
                 instance.Register(_iocContainer);
@@ -66,9 +66,14 @@ namespace Mondop.IoC.SimpleInjector
             _iocContainer.Build();
         }
 
-        public TService GetInstance<TService>() where TService: class
+        public TService GetInstance<TService>() where TService : class
         {
             return _iocContainer.GetInstance<TService>();
+        }
+
+        public IEnumerable<TService> GetAllInstances<TService>() where TService : class
+        {
+            return _iocContainer.GetAllInstances<TService>();
         }
     }
 }
